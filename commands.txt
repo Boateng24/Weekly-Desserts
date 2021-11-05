@@ -1,0 +1,21 @@
+$ python3 manage.py createsuperuser
+Username (leave blank to use 'ccuser'): Tuffour_dat
+Email address: tuffour.boateng@amalitech.com
+Password: 
+Password (again): 
+Superuser created successfully.
+
+
+python3 manage.py shell
+Python 3.6.9 (default, Jan 26 2021, 15:33:00) 
+Type 'copyright', 'credits' or 'license' for more information
+IPython 7.16.1 -- An enhanced Interactive Python. Type '?' for help.
+
+In [1]: from django.contrib.auth.models import Use
+   ...: r
+
+In [2]: user = User.objects.create_user(username="
+   ...: Kwame", email="kwame24@gmail.com", passwor
+   ...: d = "kwame@123")
+
+In [3]: user.save()
